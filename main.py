@@ -2,6 +2,12 @@ import os
 import sys
 import logging
 import subprocess
+
+# Get the current script directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Append the src directory to sys.path
+sys.path.append(os.path.join(current_dir, '..', 'src'))
+
 from src.webgui import GUI
 
 # Configure logging
