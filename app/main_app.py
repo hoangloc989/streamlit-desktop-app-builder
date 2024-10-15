@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 
 # Importing the pages
@@ -22,23 +21,3 @@ elif page == "Dashboard":
     dashboard.main()
 elif page == "Data":
     data.main()
-=======
-import streamlit as st
-
-# Importing the pages
-import home, about, dashboard, data
-
-# Sidebar for navigation
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ("Home", "About", "Dashboard", "Data"))
-
-# Display the selected page
-if page == "Home":
-    home.main()
-elif page == "About":
-    about.main()
-elif page == "Dashboard":
-    dashboard.main()
-elif page == "Data":
-    data.main()    
->>>>>>> d411d8c93ed13ff240ec2be16abd6e834477f0da
