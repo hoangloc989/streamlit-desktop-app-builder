@@ -1,6 +1,27 @@
 # Streamlit as Desktop Application
 
 Packaging a Streamlit application into an executable file using PyInstaller presents certain challenges and is not officially endorsed by Streamlit. Streamlit is primarily designed for developing web applications that operate on a server and are accessed through a web browser. However, if you wish to proceed with this approach, follow the steps below.
+```
+.
+└── StreamlitApp/
+    ├── .streamlit/
+    │   ├── config.toml
+    │   └── ..
+    ├── app/
+    │   ├── assets/
+    │   │   ├── apps.ico
+    │   │   └── ..
+    │   ├── home.py
+    │   ├── about.py
+    │   └── main_app.py
+    ├── src/
+    │   └── webgui.py
+    ├── wheels/
+    │   └── ...
+    ├── main.py
+    ├── installer.cfg
+    └── requirements.txt
+```
 
 # Quick start
 1. Clone the Repository: First, clone the repository containing the Streamlit application:
@@ -55,6 +76,8 @@ Packaging a Streamlit application into an executable file using PyInstaller pres
     ```
 8. Install the Application
 You can directly launch the application by running the .pyw file or install the application by running MyStreamlitApp.exe. Once the installation is completed, you should be able to find the app icon in the start menu and start the application as a native app.
+
+![Example UI](docs/StreamlitApp.gif)
 
 # Important Considerations
 - **Limitations**: This method may not be suitable for all scenarios and could have inherent limitations.
